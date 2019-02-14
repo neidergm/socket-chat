@@ -39,8 +39,6 @@ socket.on('disconnect', () => {
 
 socket.on('sendMessage', function (dataResp) {
     console.log(dataResp.user + ", dice: " + dataResp.message);
-
-    alert(dataResp.user + ": " + dataResp.message);
 });
 
 // var data = { user: "user1", message: "Hello, I'm user1" };
