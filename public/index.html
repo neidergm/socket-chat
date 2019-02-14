@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sockets | DEMO</title>
+
+    <style>
+        #conversation{
+            height: 400%;
+            scroll-behavior: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sockets Chat Neider G</h1>
+
+    <div>
+        <div>
+            <label for="user">User name: </label><br>
+            <input type="text" name="user" id="user">
+        </div>
+
+        <div id="conversation"></div>
+        <br><br>
+        <div>
+            <label for="message">Mesagge:</label><br>
+            <input type="text" name="message" id="message">
+            <br><br>
+            <input type="button" value="Send" id="sendMessage">
+        </div>
+    </div>
+
+    <script src="socket.io/socket.io.js"></script>
+
+    <script src="./js/socket-custom.js"></script>
+</body>
+
+</html>
